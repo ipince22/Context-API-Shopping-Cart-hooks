@@ -3,6 +3,7 @@ import { CartContext } from "./CartContext";
 
 export const Tshirt = props => {
 	const [cart, setCart] = useContext(CartContext);
+	console.log("Tshirt.js", cart);
 
 	const addToCart = () => {
 		const thirt = { name: props.name, price: props.price };
